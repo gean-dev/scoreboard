@@ -8,7 +8,7 @@
   const totalSize = 7;
 
   let sortKey = "Total";
-  let usersSize = Object.keys(users).length;
+  let usersSize = Object.entries(users).filter(([name, user]) => Object.keys(user).length > 0).length;
   let totalTasks = 0;
   Object.values(tasks).forEach((tasks: any) => {
     totalTasks += Object.keys(tasks).length;
