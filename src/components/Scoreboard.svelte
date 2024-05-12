@@ -188,7 +188,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: center;
-  font-weight: normal;
+  font-weight: bold;
   font-size: medium;
 }
 #subtask tr td{
@@ -362,15 +362,15 @@ dialog {
                     class="border-separate border-spacing-0 rounded-lg border border-gray-500 mx-auto overflow-hidden text-center"
                   >
                       <tr>
-                        <th>Subtask</th>
+                        <th class="py-1 px-4">Subtask</th>
                         {#each Object.keys(users[name][task]) as index}
-                          <td>{index}</td>
+                          <td class="py-1 px-4">{index}</td>
                         {/each}
                       </tr>
                       <tr>
                         <th>Score</th>
                         {#each Object.values(users[name][task]) as score}
-                          <td>{score}</td>
+                          <td class="py-1 px-4">{score}</td>
                         {/each}
                       </tr>
                   </table>
