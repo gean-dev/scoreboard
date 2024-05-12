@@ -362,15 +362,15 @@ dialog {
                     class="border-separate border-spacing-0 rounded-lg border border-gray-500 mx-auto overflow-hidden text-center"
                   >
                       <tr>
-                        <th class="py-1 px-4">Subtask</th>
+                        <th class="border-collapse border border-gray-500 py-1 px-4">Subtask</th>
                         {#each Object.keys(users[name][task]) as index}
-                          <td class="py-1 px-4">{index}</td>
+                          <td class="border-collapse border border-gray-500 py-1 px-4">{index}</td>
                         {/each}
                       </tr>
                       <tr>
-                        <th>Score</th>
+                        <th class="border-collapse border border-gray-500 py-1 px-4">Score</th>
                         {#each Object.values(users[name][task]) as score}
-                          <td class="py-1 px-4">{score}</td>
+                          <td class="border-collapse border border-gray-500 py-1 px-4">{score}</td>
                         {/each}
                       </tr>
                   </table>
