@@ -101,8 +101,8 @@
   border-width: 1px;
   border-color: rgb(107, 114, 128, 1);
   border-style: solid;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   overflow: hidden;
@@ -117,20 +117,25 @@
   border-width: 1px;
   border-color: rgb(107, 114, 128, 1);
   border-style: solid;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 #scoreboard tr td.name {
   text-align: left;
   padding-left: 0.75rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 #scoreboard tr td.score {
   font-weight: bold;
+}
+@media (min-width: 800px) {
+  #scoreboard table {
+    table-layout: fixed;
+  }
 }
 #details tr th{
   border-collapse: collapse;
@@ -224,7 +229,6 @@ dialog {
 <div id="scoreboard">
   <table
     class="w-full border-separate border-spacing-0 rounded-lg border border-gray-500 mx-auto overflow-hidden text-center"
-    style="table-layout: fixed;"
   >
     <thead>
       <tr>
