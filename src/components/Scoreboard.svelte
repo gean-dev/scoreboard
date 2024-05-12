@@ -362,13 +362,13 @@ dialog {
                     class="border-separate border-spacing-0 rounded-lg border border-gray-500 mx-auto overflow-hidden text-center"
                   >
                       <tr>
-                        <th class="text-lg">Subtask</th>
+                        <th>Subtask</th>
                         {#each Object.keys(users[name][task]) as index}
-                          <th class="text-lg">{index}</th>
+                          <td>{index}</td>
                         {/each}
                       </tr>
                       <tr>
-                        <th class="text-lg">Score</th>
+                        <th>Score</th>
                         {#each Object.values(users[name][task]) as score}
                           <td>{score}</td>
                         {/each}
