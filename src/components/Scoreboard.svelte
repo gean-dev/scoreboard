@@ -305,11 +305,11 @@ dialog {
 </div>
 
 {#each Users as [name, user]}
-  <dialog id={name} class="flex flex-col justify-top items-start w-3/4">
+  <dialog id={name} class="flex flex-col justify-top items-start w-11/12 lg:w-3/4">
     <div
       class="flex justify-center items-center flex-col text-center"
     >
-      <div class="w-11/12 lg:w-10/12">
+      <div class="w-10/12">
         <h1 class="font-bold my-4 text-2xl">
           {name}
         </h1>
