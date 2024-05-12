@@ -180,8 +180,8 @@
   border-width: 1px;
   border-color: rgb(107, 114, 128, 1);
   border-style: solid;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   overflow: hidden;
@@ -196,8 +196,8 @@
   border-width: 1px;
   border-color: rgb(107, 114, 128, 1);
   border-style: solid;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   overflow: hidden;
@@ -309,7 +309,7 @@ dialog {
     <div
       class="flex justify-center items-center flex-col text-center"
     >
-      <div class="w-10/12">
+      <div class="w-11/12 lg:w-10/12">
         <h1 class="font-bold my-4 text-2xl">
           {name}
         </h1>
@@ -361,15 +361,14 @@ dialog {
                   <table id="subtask"
                     class="border-separate border-spacing-0 rounded-lg border border-gray-500 mx-auto overflow-hidden text-center"
                   >
-                    <thead>
                       <tr>
+                        <th class="text-lg">Subtask</th>
                         {#each Object.keys(users[name][task]) as index}
-                          <th class="text-lg">{"Subtask " + index}</th>
+                          <th class="text-lg">{index}</th>
                         {/each}
                       </tr>
-                    </thead>
-                    <tbody>
                       <tr>
+                        <th class="text-lg">Score</th>
                         {#each Object.values(users[name][task]) as score}
                           <td>{score}</td>
                         {/each}
